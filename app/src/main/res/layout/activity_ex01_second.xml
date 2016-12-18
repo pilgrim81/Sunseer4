@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ex01_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.sunseer4.suneer4exampleproject.Ex01_second">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_second_message"
+        android:hint="入力ください。"/>
+
+
+    <Button
+        android:text="返却(結果無)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back1"/>
+
+    <Button
+        android:text="返却(結果有)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back2"/>
+
+    <Button
+        android:text="閉じる"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Ex01_second_close"
+        android:onClick="Ex01_second_close"/>
+
+</LinearLayout>

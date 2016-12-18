@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sunseer4.suneer4exampleproject">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ex01_main"
+            android:label="例の1" />
+        <activity android:name=".Ex01_second" />
+        <activity android:name=".Ex02_main" />
+        <activity
+            android:name=".Ex02_second"
+            android:label="アラート"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Ex03_main"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Ex03_second"
+            android:launchMode="singleInstance" />
+        <activity android:name=".Ex03_third" />
+        <activity android:name=".App01_main"></activity>
+    </application>
+
+</manifest>
